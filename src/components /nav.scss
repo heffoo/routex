@@ -1,25 +1,40 @@
 .text {
-  font-size: 24px;
-  margin: 10px;
-  text-decoration: none;
+	font-size: 24px;
+	margin: 10px;
+	text-decoration: none;
 }
 .navmenu {
-  display: flex;
-  justify-content: center;
-  background-color: lightgray;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(236, 235, 235);
 }
 .itemnav {
-  @extend .text;
-  border-right: 1px solid black;
-  width: 150px;
-  list-style: none;
+	@extend .text;
+	border-right: 1px solid black;
+	padding: 0 20px;
+	list-style: none;
 
-  &:last-child {
-    border-right: 0;
-  }
+	&:last-child {
+		border-right: 0;
+	}
 }
 
 .Link {
-  text-decoration: none;
-  color: green;
+	text-decoration: none;
+	color: chocolate;
+	&::after {
+		content: '';
+		display: block;
+		width: 100%;
+		background-color: #ccc;
+		height: 3px;
+		transform: scale(0);
+		transition: all 0.3s;
+	}
+	&:hover::after {
+		transform: scale(0.5);
+	}
+}
+.active {
+	color:yellow;
 }
