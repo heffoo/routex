@@ -1,0 +1,25 @@
+.text {
+  font-size: 24px;
+  margin: 10px;
+  text-decoration: none;
+}
+.navmenu {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+}
+.itemnav {
+  @extend .text;
+  border-right: 1px solid black;
+  width: 150px;
+  list-style: none;
+
+  &:last-child {
+    border-right: 0;
+  }
+}
+
+.Link {
+  text-decoration: none;
+  color: green;
+}
