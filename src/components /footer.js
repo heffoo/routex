@@ -4,41 +4,40 @@ import First from './pages/home/home'
 import Second from './pages/second/second'
 import Third from './pages/third/third'
 
+import './footer.scss'
 
-import "./nav.scss";
 
-const Appl = ({ items }) => {
-	return (
-		<Router>
-			<div className="navbar">
-				<ul className="navmenu">
-					{items.map((item) => (
+
+const Footer = ( { items }) => {
+    return (
+<Router>
+        <div className="footernav ">
+            <ul className="footernavmenu">
+        {items.map((item) => (
 						<li className="itemnav">
 							<NavLink  className="Link" activeClassName="active" to={item.to}>
 								{item.name}
 							</NavLink>
 						</li>
 					))}
-				</ul>
-			</div>
-			<Switch>
+                    </ul>
+        </div>
+        <Switch>
 				<Route path="/third">
-					<Third />
+					
 				</Route>
 				<Route path="/second">
-					<Second />
+					
 				</Route>
 				<Route path="/">
-					<First />
+			
 				</Route>
 			</Switch>
-			
-		</Router>
-		
-	  );
-	
-};
+    </Router>
 
+    )
 
-
-export default Appl;
+    
+}
+ 
+export default Footer;

@@ -3,6 +3,7 @@ import "./second.scss";
 
 export default function Second() {
   return (
+    <div class="page">
     <div className="mainPage">
       <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque cum nisi ullam odio pariatur? Voluptatem
@@ -13,5 +14,6 @@ export default function Second() {
       veniam eius et autem ea, quaerat totam architecto odio iure quisquam ducimus sunt iste impedit magnam asperiores
       deleniti! Exercitationem esse fugiat dolore molestiae eos.
    </p> </div>
+   </div>
   );
 }
