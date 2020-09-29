@@ -4,7 +4,29 @@
     background-color: lightblue;
     margin-top: -50px;
     border-radius: 3px;
+    box-shadow: 0 3px 12px lightgray;
 }
 .footernavmenu {
     display: flex;
+    justify-content: flex-end;
+}
+.itemnavfooter {
+    font: {
+        size: 16px;
+    }
+    padding: 10px 15px;
+    list-style: none;
+    
+    .Link {
+        color: black;
+        &::after {
+            background-color: #fff;
+        }
+    }
+    .active {
+        color: yellow;
+    }
+}
+.footerContent {
+    padding-left: 15px;
 }

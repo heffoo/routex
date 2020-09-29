@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 import './footer.scss'
@@ -11,7 +11,7 @@ const Footer = ( { items }) => {
         <div className="footernav ">
             <ul className="footernavmenu">
         {items.map((item) => (
-						<li key={item.name} className="itemnav">
+						<li key={item.name} className="itemnavfooter">
                             
 							<NavLink  className="Link" activeClassName="active" to={item.to}>
 								{item.name}
@@ -19,6 +19,9 @@ const Footer = ( { items }) => {
 						</li>
 					))}
                     </ul>
+                    <div className="footerContent">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ipsam.
+                    </div>
         </div>
 
     )

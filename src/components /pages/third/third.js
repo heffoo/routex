@@ -22,8 +22,8 @@ export default function Third() {
           voluptatem nostrum nam consectetur non, repellendus hic voluptatibus harum cupiditate maiores fugit dolorum,
           quis tempora laboriosam excepturi optio reprehenderit labore neque odit maxime. Quaerat, iure, possimus
           blanditiis modi tempore alias nobis, corporis nemo voluptates deleniti quasi tempora quis amet ullam
-          temporibus repudiandae vitae dolorum quae sit. 
-        </p>{" "}
+          temporibus repudiandae vitae dolorum quae sit.
+        </p>
       </div>
     </div>
   );
