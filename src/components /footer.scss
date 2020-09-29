@@ -1,8 +1,10 @@
-.footer {
+.footernav {
     width: 100%;
     height: 100px;
     background-color: lightblue;
     margin-top: -50px;
     border-radius: 3px;
-    
+}
+.footernavmenu {
+    display: flex;
 }
